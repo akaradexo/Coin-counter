@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cash Counter</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./styles/normalize.css">
+  <link rel="stylesheet" href="./styles/style.css">
+  
+</head>
+
+<body>
+<section>
+  <div class="container">
+  <h1>Cash Counter</h1>
+    <form class="user-input">
+      <label for="bill">Enter the Bill Amount</label> 
+      <input name="bill" type="number" placeholder="0" id="billAmount" required/>
+      <label for="cash">Enter the Cash Amount</label>
+      <input name="cash" type="number" placeholder="0" id="cashAmount" disabled required/>
+      <button class="button-submit-pushable" type="submit" role="button">
+        <span class="button-submit-shadow"></span>
+        <span class="button-submit-edge"></span>
+        <span class="button-submit-front text">CONVERT</span>
+      </button>
+    </form>
+    <div id="money-output" class="money-output">
+      <div class="amount-return">
+        <h3>Returnable Amount :</h3> 
+        <h3 id="return-money"></h3>
+      </div>
+			<div id="output" reversed class="list-non-bullet"></div>
+		</div>
+  </div>
+</section>
+
+
+
+</body>
+<script src="./script/script.js"></script>
+</html>
