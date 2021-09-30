@@ -59,7 +59,7 @@ const displayMoney = function(amountToReturn){
     return(
       "<ol class='money-item'>" +
         "<li>"+ mon +"</li>" +
-        "<li>"+"x"+"</li>" +
+        "<li>"+"X"+"</li>" +
         "<li>"+ amountToReturn[mon] +"</li>" +
       "</ol>"
     );
