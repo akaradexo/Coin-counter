@@ -148,6 +148,7 @@ section{
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
+  text-transform: uppercase;
 }
 
 .button-submit-shadow {
